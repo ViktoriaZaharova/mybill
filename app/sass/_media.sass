@@ -9,10 +9,13 @@
     padding: 40px
 
 @media only screen and (max-width: 1200px)
+  .container
+    max-width: 1090px
+
   .home
-    padding: 315px 0 123px
+    padding: 303px 0 167px
     .box-text
-      margin: 84px auto 148px
+      margin: 49px auto 124px
       font-size: 38px
       font-weight: bold
       max-width: 710px
@@ -52,10 +55,10 @@
     margin: 801px auto 0
 
   .rocket
-    height: 60%
+    height: 49%
     right: auto
     left: 50%
-    transform: translate(-50%,0)
+    transform: translateX(-50%)
     background-position: center top
 
   .clouds_back
@@ -66,19 +69,33 @@
 
   h2
     font-size: 68.5px
-    margin: 0 auto 70px
+    margin: 0 auto 40px
 
   h3
     font-size: 38px
+
+  .program
+    h2
+      max-width: 800px
+      margin: 0 auto 38px
+      br
+        display: none
+    h3
+      margin: 0 auto 140px
+    .btn
+      margin: 120px auto 0
+
 
   .program-box
     width: 100%
     max-width: 631px
     margin: 0 auto 54px
     font-size: 24.5px
+    br
+      display: none
     h3
       font-size: 25px
-      margin: 0 0 27px
+      margin: 0 0 20px
     &__icon
       width: 48px
       height: 48px
@@ -91,21 +108,24 @@
     padding: 28px 110px
 
   .case
+    padding: 150px 0 140px
+    h2
+      max-width: 500px
     h3
-      margin: 0 auto 177px
+      margin: 0 auto 152px
       max-width: 730px
     .btn
-      margin: 120px auto 0
+      margin: 170px auto 0
 
   .case-box
     max-width: 760px
     flex-direction: column
     align-items: center
-    margin: 0 auto 42px
+    margin: 0 auto 33px
     h4
       width: 100%
       text-align: center
-      margin: 0 0 48px
+      margin: 0 0 32px
       font-size: 35.5px
     &__content
       font-size: 24.5px
@@ -114,17 +134,18 @@
       text-align: center
 
   .stages-work
+    padding: 110px 0 130px
     h2
-      margin: 0 auto 280px
+      margin: 0 auto 258px
 
   .stages-work-box
-    margin: 0 auto 70px
+    margin: 0 auto 80px
     max-width: 600px
     text-align: center
     font-size: 38px
 
     .icon-arrow
-      margin: 70px auto 0
+      margin: 104px auto 0
 
   .stages-work
     .btn
@@ -132,28 +153,30 @@
 
   .showcase
     h3
-      margin: 0 auto 160px
+      margin: 0 auto 167px
       font-size: 38px
       max-width: 630px
     .wrapper
       flex-direction: column
       align-items: center
     .btn
-      margin: 126px auto 0
+      margin: 134px auto 0
 
   .showcase-box
-    margin: 0 auto 65px
+    margin: 0 auto 53px
     font-size: 31px
     max-width: 400px
     br
       display: none
     h4
       font-size: 38px
+      margin: 0 auto
     &__icon
       max-width: 135px
       margin: 0 auto 32px
 
   .technical-support
+    padding: 135px 0 130px
     .container
       flex-direction: column
       align-items: center
@@ -162,8 +185,9 @@
       max-width: 550px
 
     h3
-      margin: 0 auto 237px
+      margin: 0 auto 219px
       max-width: 540px
+      line-height: 1.6
     .wrapper
       flex-direction: column
       align-items: center
@@ -171,7 +195,7 @@
       margin: 100px auto 0
 
   .technical-support-box
-    margin: 0 auto 112px
+    margin: 0 auto 98px
     font-size: 31px
     max-width: none
     h4
@@ -179,42 +203,54 @@
 
   .tariffs
     h3
-      margin: 0 auto 174px
+      margin: 0 auto 154px
       max-width: 450px
+      line-height: 1.5
     .btn
-      margin: 50px auto 0
+      margin: 57px auto 0
 
   .tariffs-box
     max-width: none
     width: 100%
     font-size: 30.5px
-    margin: 0 auto 135px
+    margin: 0 auto 124px
+    &__icon
+      height: 125px
     h4
       font-size: 39px
 
   .price
+    margin: 0 auto 2px
     font-size: 47.5px
 
   .start
     h3
-      margin: 0 auto 171px
+      margin: 0 auto 140px
+      br
+        display: none
     .btn
-      margin: 100px auto 0
+      margin: 120px auto 0
 
   .start-box
     width: 100%
     max-width: 713px
-    margin: 0 auto 64px
-    padding: 48px 30px 48px 65px
+    margin: 0 auto 70px
+    padding: 48px 160px 48px 65px
     font-size: 26.5px
     h3
-      margin: 0 0 23px
+      margin: 0 0 5px
       font-size: 41px
+    br
+      display: none
 
   .sidebar-wrapper
     top: 179px
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1080px)
+  .container
+    max-width: 986px
+
 @media only screen and (max-width: 992px)
   .home .box-text
     margin: 100px 0 105px
@@ -400,6 +436,11 @@
 
   .showcase-box
     margin: 0 auto 40px
+    max-width: 300px
+
+  .tariffs h3
+    br
+      display: block
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)
@@ -418,6 +459,8 @@
   .program-box
     padding: 24px
     margin: 0 0 30px
+    br
+      display: none
     &__body
       width: calc(100% - 24px)
       padding: 0 0 0 10px
@@ -442,7 +485,7 @@
 
 /*==========  Mobile First  ==========*/
 /* Large Devices, Wide Screens */
-@media only screen and (min-width: 1680px)
+@media only screen and (min-width: 1681px)
   .container
     max-width: 1800px
 
@@ -478,6 +521,15 @@
 
   .home
     padding: 335px 0 70px
+    .box-text
+      margin: 43px auto 49px
+
+  .rocket
+    width: 20%
+    height: 62%
+    right: 20px
+    left: auto
+    bottom: -140px
 
   .btn-black
     font-size: 37.5px
@@ -506,6 +558,8 @@
     .btn
       margin: 60px auto 0
       padding: 25px 80px
+    h3
+      margin: 0 auto 95px
 
   .stages-work
     padding: 128px 0
@@ -529,8 +583,7 @@
     padding: 123px 0
     h3
       margin: 0 auto 135px
-    .wrapper
-      justify-content: center
+
 
   .technical-support-box
     margin: 0 70px 100px
@@ -562,3 +615,5 @@
   .sidebar-wrapper
     top: 163px
 
+  footer
+    padding: 102px 0 50px
