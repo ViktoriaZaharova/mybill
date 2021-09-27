@@ -77,27 +77,27 @@ $(document).ready(function () {
             data: $(this).serialize()
         }).done(function () {
             $(this).find("input").val("");
-            // alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-
-            // если после отправки нужно показать окно "спасибо" и скрыть его через секунду
-            $('.modal__div').css('display', 'none').animate({
-                opacity: 0,
-                top: '45%'
-            });
-
-            $('#thanks__modal').css('display', 'flex')
-                .animate({
-                    opacity: 1,
-                    top: '50%'
-                }, 200);
-
-            setTimeout(function () {
-                $("#thanks__modal").css('display', 'none').animate({
-                    opacity: 0,
-                    top: '45%'
-                });
-                $('.overlay').fadeOut(400);
-            }, 1000);
+            alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+            //
+            // // если после отправки нужно показать окно "спасибо" и скрыть его через секунду
+            // $('.modal__div').css('display', 'none').animate({
+            //     opacity: 0,
+            //     top: '45%'
+            // });
+            //
+            // $('#thanks__modal').css('display', 'flex')
+            //     .animate({
+            //         opacity: 1,
+            //         top: '50%'
+            //     }, 200);
+            //
+            // setTimeout(function () {
+            //     $("#thanks__modal").css('display', 'none').animate({
+            //         opacity: 0,
+            //         top: '45%'
+            //     });
+            //     $('.overlay').fadeOut(400);
+            // }, 1000);
             // если после отправки нужно показать окно "спасибо" и скрыть его через секунду
             $(".form").trigger("reset");
         });
@@ -152,4 +152,20 @@ $(window).scroll(function() {
 $('.my-paroller').paroller();
 
 $('[name="phone"]').inputmask("+7(999) 999-99-99");
-$('[name="mail"]').inputmask();
+// $('[name="mail"]').inputmask();
+//email mask
+$('[name="mail"]').inputmask({
+    mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]",
+    greedy: false,
+    onBeforePaste: function (pastedValue, opts) {
+        pastedValue = pastedValue.toLowerCase();
+        return pastedValue.replace("mailto:", "");
+    },
+    definitions: {
+        '*': {
+            validator: "[0-9A-Za-z!#$%&'*+/=?^_`{|}~\-]",
+            cardinality: 1,
+            casing: "lower"
+        }
+    }
+});
