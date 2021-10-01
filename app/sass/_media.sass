@@ -13,7 +13,7 @@
     max-width: 1090px
 
   .home
-    padding: 303px 0 167px
+    padding: 303px 0 148px
     .box-text
       margin: 49px auto 124px
       font-size: 38px
@@ -53,6 +53,10 @@
 
   .btn-scroll-bottom
     margin: 801px auto 0
+    span
+      width: 108px
+      height: 44px
+      margin: -15px -54px
 
   .rocket
     height: 49%
@@ -81,26 +85,30 @@
       br
         display: none
     h3
-      margin: 0 auto 140px
+      margin: 0 auto 148px
     .btn
-      margin: 120px auto 0
+      margin: 108px auto 0
 
 
   .program-box
+    padding: 40px 53px 39px 62px
+    line-height: 1.4
     width: 100%
     max-width: 631px
     margin: 0 auto 54px
     font-size: 24.5px
+    border-radius: 15px
+    min-height: 262px
     br
       display: none
     h3
       font-size: 25px
-      margin: 0 0 20px
+      margin: 0 0 17px
     &__icon
       width: 48px
       height: 48px
     &__body
-      width: calc(1005 - 48px)
+      width: calc(100% - 48px)
 
 
   .btn-border
@@ -111,11 +119,13 @@
     padding: 150px 0 140px
     h2
       max-width: 500px
+      margin: 0 auto 30px
     h3
-      margin: 0 auto 152px
+      margin: 0 auto 167px
       max-width: 730px
     .btn
-      margin: 170px auto 0
+      margin: 120px auto 0
+      padding: 26px 59px
 
   .case-box
     max-width: 760px
@@ -137,19 +147,21 @@
     padding: 110px 0 130px
     h2
       margin: 0 auto 258px
+    .btn
+      margin: 195px auto 0
 
   .stages-work-box
     margin: 0 auto 80px
     max-width: 600px
     text-align: center
     font-size: 38px
-
+    h3
+      margin: 0 auto 10px
     .icon-arrow
-      margin: 104px auto 0
-
-  .stages-work
-    .btn
-      margin: 210px auto 0
+      margin: 93px auto 0
+      max-width: 72px
+    br
+      display: block
 
   .showcase
     h3
@@ -160,20 +172,20 @@
       flex-direction: column
       align-items: center
     .btn
-      margin: 134px auto 0
+      margin: 154px auto 0
 
   .showcase-box
     margin: 0 auto 53px
     font-size: 31px
     max-width: 400px
     br
-      display: none
+      display: block
     h4
       font-size: 38px
       margin: 0 auto
     &__icon
       max-width: 135px
-      margin: 0 auto 32px
+      margin: 0 auto 25px
 
   .technical-support
     padding: 135px 0 130px
@@ -185,14 +197,14 @@
       max-width: 550px
 
     h3
-      margin: 0 auto 219px
+      margin: 0 auto 216px
       max-width: 540px
       line-height: 1.6
     .wrapper
       flex-direction: column
       align-items: center
     .btn
-      margin: 100px auto 0
+      margin: 109px auto 0
 
   .technical-support-box
     margin: 0 auto 98px
@@ -200,12 +212,18 @@
     max-width: none
     h4
       font-size: 31px
+    &__icon
+      margin: 0 auto 40px
 
   .tariffs
+    h2
+      margin: 0 auto 32px
     h3
-      margin: 0 auto 154px
+      margin: 0 auto 160px
       max-width: 450px
       line-height: 1.5
+      br
+        display: block
     .btn
       margin: 57px auto 0
 
@@ -224,22 +242,30 @@
     font-size: 47.5px
 
   .start
+    padding: 133px 0 130px
+    h2
+      margin: 0 auto 30px
     h3
-      margin: 0 auto 140px
+      margin: 0 auto 163px
       br
         display: none
     .btn
-      margin: 120px auto 0
+      margin: 98px auto 0
 
   .start-box
     width: 100%
     max-width: 713px
-    margin: 0 auto 70px
-    padding: 48px 160px 48px 65px
+    margin: 0 auto 62px
+    padding: 34px 160px 48px 65px
     font-size: 26.5px
+    line-height: 1.4
+    min-height: 260px
     h3
       margin: 0 0 5px
       font-size: 41px
+    &:nth-child(2)
+      br
+        display: block
     br
       display: none
 
@@ -250,6 +276,179 @@
 @media only screen and (max-width: 1080px)
   .container
     max-width: 986px
+
+  h1
+    font-size: 79px
+
+  .home
+    padding: 267px 0 123px
+    .box-text
+      font-size: 45px
+      max-width: 835px
+      margin: 58px auto 77px
+
+  .btn-black
+    padding: 33px 100px
+    font-size: 44.5px
+
+  .btn-border
+    font-size: 44.5px
+    padding: 33px 125px
+
+  .rocket
+    bottom: -33px
+
+  h2
+    font-size: 80.5px
+
+  h3
+    font-size: 44.5px
+
+  .program
+    padding: 130px 0 125px
+    h2
+      max-width: 865px
+      margin: 0 auto 45px
+    h3
+      margin: 0 auto 66px
+    .btn
+      margin: 44px auto 0
+
+  .program-box
+    max-width: 742px
+    font-size: 28px
+    padding: 45px 53px 39px 74px
+    line-height: 1.5
+    margin: 0 auto 40px
+    min-height: 308px
+    br
+      display: block
+    h3
+      font-size: 29.5px
+      margin: 0 0 18px
+    &__icon
+      width: 57px
+      height: 57px
+    &__body
+      width: calc(100% - 57px)
+
+  .case
+    padding: 103px 0 122px
+    h2
+      max-width: 585px
+      margin: 0 auto 36px
+    h3
+      max-width: 840px
+      line-height: 1.7
+      margin: 0 auto 47px
+    .btn
+      margin: 45px auto 0
+      padding: 35px 59px
+
+  .case-box
+    max-width: 905px
+    min-height: 260px
+    margin: 0 auto 35px
+    br
+      display: block
+    h4
+      font-size: 42px
+      margin: 0 0 35px
+    &__content
+      font-size: 29px
+
+  .stages-work
+    padding: 106px 0 125px
+    h2
+      margin: 0 auto 182px
+    .btn
+      margin: 69px auto 0
+
+  .stages-work-box
+    font-size: 44.5px
+    max-width: 700px
+    margin: 0 auto 101px
+    .icon-arrow
+      max-width: 89px
+      margin: 101px auto 0
+
+
+  .showcase
+    padding: 104px 0 125px
+    h3
+      font-size: 44.5px
+      max-width: 720px
+      line-height: 1.6
+      margin: 0 auto 70px
+    .btn
+      margin: 34px auto 0
+
+  .showcase-box
+    font-size: 36.5px
+    max-width: 540px
+    margin: 0 auto 63px
+    &__icon
+      max-width: 160px
+    h4
+      font-size: 44.5px
+
+  .technical-support
+    padding: 109px 0 125px
+    h2
+      max-width: 630px
+    h3
+      max-width: 680px
+      margin: 0 auto 123px
+    .btn
+      margin: 78px auto 0
+
+  .technical-support-box
+    font-size: 36.5px
+    margin: 0 auto 80px
+    &__icon
+      max-width: 127px
+    h4
+      font-size: 36.5px
+
+  .tariffs
+    padding: 104px 0 124px
+    h3
+      max-width: 525px
+      line-height: 1.7
+      margin: 0 auto 90px
+    .btn
+      margin: 6px auto 0
+
+  .tariffs-box
+    font-size: 36px
+    margin: 0 auto 93px
+    &__icon
+      height: 144px
+    h4
+      font-size: 46px
+
+  .price
+    font-size: 55.5px
+    margin: 0 auto 8px
+
+  .start
+    padding: 107px 0 120px
+    h3
+      max-width: 800px
+      line-height: 1.7
+      margin: 0 auto 88px
+    .btn
+      margin: 69px auto 0
+
+  .start-box
+    max-width: 839px
+    padding: 36px 179px 53px 74px
+    font-size: 31px
+    margin: 0 auto 40px
+    h3
+      margin: 0 0 5px
+      font-size: 48.5px
+
 
 @media only screen and (max-width: 992px)
   .home .box-text
