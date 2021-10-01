@@ -8,6 +8,9 @@
   .start-box
     padding: 40px
 
+  .program-box
+    padding: 40px 23px 50px 45px
+
 @media only screen and (max-width: 1200px)
   .container
     max-width: 1090px
@@ -462,6 +465,7 @@
   h2
     font-size: 50px
     margin: 0 auto 50px
+    line-height: normal
 
   .logo
     font-size: 40px
@@ -489,6 +493,7 @@
 
   h1
     font-size: 50px
+    line-height: normal
 
   .home
     padding: 200px 0 120px
@@ -511,10 +516,14 @@
 
   h3
     font-size: 30px
+    line-height: normal
 
   .program-box
     font-size: 20px
+    min-height: auto
     padding: 30px
+    br
+      display: none
     h3
       font-size: 22px
       margin: 0 0 10px
@@ -526,6 +535,9 @@
 
   .case-box
     font-size: 20px
+    min-height: auto
+    &__content
+      font-size: 20px
     h4
       font-size: 24px
       margin: 0 auto 10px
@@ -538,11 +550,16 @@
 
   .stages-work h2, .showcase h3, .technical-support h3, .tariffs h3, .start h3
     margin: 0 auto 70px
+    line-height: normal
+
 
   .stages-work-box
     font-size: 20px
     margin: 0 auto 40px
+    max-width: 400px
+
     .icon-arrow
+      max-width: 50px
       margin: 40px auto 0
 
   .showcase-box
@@ -578,11 +595,18 @@
     padding: 30px
     margin: 0 auto 30px
     border-radius: 5px
+    font-size: 20px
+    min-height: auto
+    line-height: normal
     br
       display: none
     h3
+      line-height: normal
       margin: 0 0 10px
       font-size: 26px
+    &:nth-child(2), &:last-child
+      br
+        display: none
 
   footer
     padding: 50px 0 30px
@@ -740,8 +764,6 @@
 
   .btn-scroll-bottom
     margin: 190px auto 0
-
-
 
   .p-120
     padding: 160px 0
