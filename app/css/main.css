@@ -736,9 +736,7 @@ footer {
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+          justify-content: space-between; }
   .list-pay li {
     margin: 0 0 40px;
     width: 100%;
@@ -1316,7 +1314,7 @@ footer {
     font-size: 50px;
     line-height: normal; }
   .home {
-    padding: 200px 0 120px; }
+    padding: 160px 0 120px; }
     .home .box-text {
       font-size: 18px;
       font-weight: normal;
@@ -1446,7 +1444,11 @@ footer {
     margin: 0 auto 40px;
     max-width: 300px; }
   .tariffs h3 br {
-    display: block; } }
+    display: block; }
+  .case .btn {
+    padding: 14px 10px; }
+  .btn {
+    font-size: 20px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
@@ -1470,8 +1472,6 @@ footer {
       width: 24px;
       height: 24px; }
   .list-pay {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
     .list-pay li {
@@ -1482,7 +1482,9 @@ footer {
   .modal__wrapper {
     padding: 40px 30px; }
     .modal__wrapper h2 {
-      font-size: 24px; } }
+      font-size: 24px; }
+  .btn {
+    font-size: 16px; } }
 
 /*==========  Mobile First  ==========*/
 /* Large Devices, Wide Screens */
