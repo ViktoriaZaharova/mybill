@@ -1280,11 +1280,143 @@ footer {
       margin: 0 0 5px;
       font-size: 48.5px; } }
 
-@media only screen and (max-width: 992px) {
-  .home .box-text {
-    margin: 100px 0 105px; }
+@media only screen and (max-width: 1030px) {
+  .logo {
+    font-size: 40px; }
+  .logo-icon {
+    max-width: 52px;
+    min-width: 52px; }
+  header {
+    padding: 40px 0; }
+  .btn-burger {
+    width: 60px;
+    height: 40px; }
+    .btn-burger span {
+      height: 6px; }
+  .btn-green {
+    padding: 9px 45px;
+    font-size: 20px; }
+  .btn-black {
+    font-size: 26px;
+    padding: 23px 60px; }
+  .btn-border {
+    font-size: 24px;
+    padding: 23px 60px; }
+  .home {
+    padding: 167px 0 123px; }
+    .home .box-text {
+      margin: 40px auto;
+      font-size: 30px;
+      line-height: normal; }
+  .clouds_front {
+    background-position: center bottom; }
+  h1 {
+    font-size: 50px;
+    line-height: normal;
+    max-width: 700px; }
+  .btn-scroll-bottom {
+    margin: 200px auto 0; }
+    .btn-scroll-bottom span {
+      width: 80px;
+      margin: -15px -40px; }
+  .program h2 {
+    margin: 0 auto 30px; }
+  .program h3 {
+    margin: 0 auto 30px; }
+  h2 {
+    font-size: 50px;
+    line-height: normal; }
+  h3 {
+    font-size: 26px; }
+  .program-box {
+    font-size: 22px;
+    min-height: auto; }
+    .program-box br {
+      display: none; }
+    .program-box h3 {
+      margin: 0 0 10px; }
+  .case h3 {
+    line-height: normal; }
+  .case .btn {
+    padding: 20px 50px;
+    margin: 20px auto 0; }
+  .case-box__content {
+    font-size: 22px; }
+  .case-box {
+    margin: 0 auto 40px;
+    min-height: auto; }
+    .case-box br {
+      display: none; }
+    .case-box h4 {
+      font-size: 34px;
+      margin: 0 auto 20px; }
+  .p-120 {
+    padding: 80px 0; }
   .stages-work h2 {
-    margin: 0 auto 200px; } }
+    margin: 0 auto 40px; }
+  .stages-work .btn {
+    margin: 20px auto 0; }
+  .stages-work-box {
+    margin: 0 auto 40px;
+    font-size: 22px; }
+    .stages-work-box br {
+      display: none; }
+    .stages-work-box .icon-arrow {
+      margin: 30px auto 0;
+      max-width: 40px; }
+  .showcase h3 {
+    margin: 0 auto 60px;
+    font-size: 26px;
+    line-height: normal; }
+  .showcase .btn {
+    margin: 0 auto; }
+  .showcase-box {
+    font-size: 24px; }
+    .showcase-box h4 {
+      font-size: 26px; }
+    .showcase-box__icon {
+      max-width: 120px; }
+  .technical-support h3 {
+    margin: 0 auto 60px; }
+  .technical-support .btn {
+    margin: 0 auto; }
+  .technical-support-box {
+    font-size: 24px;
+    margin: 0 auto 60px; }
+    .technical-support-box__icon {
+      margin: 0 auto 20px;
+      max-width: 80px; }
+    .technical-support-box h4 {
+      font-size: 26px; }
+  .tariffs h3 {
+    margin: 0 auto 60px;
+    line-height: normal; }
+  .tariffs-box {
+    font-size: 24px;
+    margin: 0 auto 60px; }
+    .tariffs-box__icon {
+      height: 100px; }
+    .tariffs-box h4 {
+      font-size: 26px; }
+  .price {
+    font-size: 40px; }
+  .start h3 {
+    margin: 0 auto 60px;
+    line-height: normal; }
+  .start .btn {
+    margin: 30px auto 0; }
+  .start-box {
+    font-size: 24px;
+    min-height: auto; }
+    .start-box h3 {
+      font-size: 28px;
+      margin: 0 0 20px; }
+  footer {
+    padding: 80px 0 50px; }
+  .links-black {
+    font-size: 26px; }
+  .sidebar-wrapper {
+    top: 130px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -1415,6 +1547,11 @@ footer {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
+  .home {
+    padding: 100px 0 80px; }
+    .home .box-text {
+      margin: 20px auto;
+      line-height: normal; }
   .btn-green {
     font-size: 12px;
     padding: 5px 10px; }
@@ -1425,6 +1562,19 @@ footer {
     .logo-icon {
       min-width: 30px;
       max-width: 30px; }
+  .clouds_back {
+    bottom: 0px; }
+  .my-paroller {
+    -webkit-transform: none !important;
+            transform: none !important; }
+  .rocket {
+    bottom: -45px;
+    width: 100%;
+    background-size: 50px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    left: auto;
+    right: 0; }
   .btn-burger {
     width: 30px;
     height: 20px;
@@ -1448,7 +1598,12 @@ footer {
   .case .btn {
     padding: 14px 10px; }
   .btn {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .btn-scroll-bottom {
+    margin: 155px auto 0; }
+    .btn-scroll-bottom span {
+      max-width: 60px;
+      margin: -15px -30px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
