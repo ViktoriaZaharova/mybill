@@ -38,12 +38,12 @@
 <div class="sidebar-wrapper">
   <div class="list-group">
     <a href="https://bank.mybill.ru/Account/LogOn" class="list-group-item">
-      <i class="fas fa-sign-in-alt"></i>Entrance
+      <i class="fas fa-sign-in-alt"></i>Sign in
     </a>
     <a href="index.html" class="list-group-item">
       <i class="fas fa-language"></i>Русский
     </a>
-    <a href="https://mybill.atlassian.net/wiki/spaces/UI/overview" class="list-group-item">
+    <a href="https://mybill.atlassian.net/wiki/spaces/UI/overview" target="_blank" class="list-group-item">
       <i class="fas fa-question"></i>Help
     </a>
   </div>
@@ -95,14 +95,14 @@
 
     <div class="wrapper w-100">
       <div class="program-box">
-        <div class="program-box__icon"><img src="img/check.png" alt=""></div>
+        <div class="program-box__icon"><img src="img/check.svg" alt=""></div>
         <div class="program-box__body">
           <h3>Quick start</h3>
           <p>Thought-out solution allows you to launch your program in 1 day, without developing your own platform.</p>
         </div>
       </div>
       <div class="program-box">
-        <div class="program-box__icon"><img src="img/check.png" alt=""></div>
+        <div class="program-box__icon"><img src="img/check.svg" alt=""></div>
         <div class="program-box__body">
           <h3>Convenient prize store</h3>
           <p>Your prize store is available right after registration. Customer has a personal account to which he
@@ -110,7 +110,7 @@
         </div>
       </div>
       <div class="program-box">
-        <div class="program-box__icon"><img src="img/check.png" alt=""></div>
+        <div class="program-box__icon"><img src="img/check.svg" alt=""></div>
         <div class="program-box__body">
           <h3>Analytics</h3>
           <p>User-friendly personal account of the organizer with clear settings and reports.</p>
@@ -217,7 +217,7 @@
 
     <div class="wrapper w-100">
       <div class="technical-support-box">
-        <div class="technical-support-box__icon"><img src="img/check.png" alt=""></div>
+        <div class="technical-support-box__icon"><img src="img/check.svg" alt=""></div>
         <h4>We deal with urgent issues around the clock. </h4>
         <p>Has the airline postponed the flight?</p>
         <p>Has the customer decided to cancel the reservation?</p>
@@ -225,7 +225,7 @@
           get in touch and help!</p>
       </div>
       <div class="technical-support-box">
-        <div class="technical-support-box__icon"><img src="img/check.png" alt=""></div>
+        <div class="technical-support-box__icon"><img src="img/check.svg" alt=""></div>
         <h4>We answer to any customer queries.</h4>
         <p>Where can I get my gift voucher?</p>
         <p>How to complete a registration?</p>
@@ -316,14 +316,14 @@
 <div class="modal__div" id="modalCall">
   <div class="modal__wrapper">
     <div class="modal__close"></div>
-    <h2>Back call</h2>
+    <h2>Callback</h2>
 
     <form method="post" class="form">
 
-      <input type="hidden" value="Back call mybill.ru" name="theme">
+      <input type="hidden" value="Callback mybill.ru" name="theme">
       <input type="hidden" value="Hello!" name="text">
       <label><input type="text" name="phone" placeholder="Your phone number" required></label>
-      <label><input type="text" name="mail" placeholder="Your e-mail" required/>
+      <label><input type="email" name="mail" placeholder="Your e-mail" pattern=".+@beststartupever\.com" required/>
       </label>
 
       <button type="submit" class="btn btn-border">Send</button>
@@ -334,18 +334,26 @@
 <div class="modal__div" id="modalQuestion">
   <div class="modal__wrapper">
     <div class="modal__close"></div>
-    <h2>Ask a Question</h2>
+    <h2>Ask a question</h2>
 
     <form method="post" class="form">
 
       <input type="hidden" value="Question mybill.ru" name="theme">
       <input type="hidden" value="Hello!" name="text">
       <label><input type="text" name="phone" placeholder="Your phone number" required></label>
-      <label><input type="text" name="mail" placeholder="Your e-mail" required/>
+      <label><input type="email" name="mail" placeholder="Your e-mail" pattern=".+@beststartupever\.com" required/>
       </label>
 
       <button type="submit" class="btn btn-border">Send</button>
     </form>
+  </div>
+</div>
+
+<div class="modal__div" id="thanks__modal">
+  <div class="modal__wrapper">
+    <div class="modal__close"></div>
+    <h2>Thank you for your application!</h2>
+    <div class="box-text text-center"><p>We will contact you shortly.</p></div>
   </div>
 </div>
 

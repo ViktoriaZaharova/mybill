@@ -751,6 +751,8 @@ footer {
             justify-content: center; }
     .list-pay li img {
       width: 100%; }
+  .list-pay .icon-pay1 {
+    margin: 20px 0 40px; }
 
 .icon-pay1 {
   max-width: 115px; }
@@ -1542,6 +1544,8 @@ footer {
     .list-pay li {
       padding: 0 10px;
       margin: 0 0 30px; }
+    .list-pay .icon-pay1 {
+      margin: 15px 0 30px; }
   .links-black {
     font-size: 24px; } }
 
@@ -1563,7 +1567,7 @@ footer {
       min-width: 30px;
       max-width: 30px; }
   .clouds_back {
-    bottom: 0px; }
+    bottom: 0; }
   .my-paroller {
     -webkit-transform: none !important;
             transform: none !important; }
@@ -1582,14 +1586,18 @@ footer {
   .sidebar-wrapper {
     top: 70px; }
   h1, h2 {
-    font-size: 40px; }
+    font-size: 30px; }
   .p-120 {
     padding: 50px 0; }
   h3 {
-    font-size: 26px;
-    margin: 0 auto 40px; }
-  .showcase h3 {
-    font-size: 26px; }
+    font-size: 20px;
+    margin: 0 auto 30px; }
+  .showcase h3, .start-box h3, .program-box h3, .case-box h4, .showcase-box h4, .technical-support-box h4, .tariffs-box h4 {
+    font-size: 20px; }
+  .price {
+    font-size: 22px; }
+  .stages-work h2, .showcase h3, .technical-support h3, .tariffs h3, .start h3, h2 {
+    margin: 0 auto 30px; }
   .showcase-box {
     margin: 0 auto 40px;
     max-width: 300px; }
@@ -1598,21 +1606,24 @@ footer {
   .case .btn {
     padding: 14px 10px; }
   .btn {
-    font-size: 20px; }
+    font-size: 18px; }
   .btn-scroll-bottom {
     margin: 155px auto 0; }
     .btn-scroll-bottom span {
       max-width: 60px;
-      margin: -15px -30px; } }
+      margin: -15px -30px; }
+  .program-box__icon {
+    width: 45px;
+    height: 45px; }
+  .program-box__body {
+    width: calc(100% - 45px); }
+  .program-box, .case-box, .case-box__content, .stages-work-box, .showcase-box, .technical-support-box, .tariffs-box, .start-box, .links-black {
+    font-size: 16px; }
+  .start-box h3 {
+    margin: 0 0 10px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
-  h1, h2 {
-    font-size: 26px; }
-  h2 {
-    margin: 0 auto 30px; }
-  h3 {
-    font-size: 24px; }
   .btn-black, .btn-border {
     font-size: 18px; }
   .program-box {
@@ -1639,7 +1650,9 @@ footer {
     .modal__wrapper h2 {
       font-size: 24px; }
   .btn {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .list-pay .icon-pay1 {
+    margin: 0 0 30px; } }
 
 /*==========  Mobile First  ==========*/
 /* Large Devices, Wide Screens */
@@ -1693,9 +1706,9 @@ footer {
     .program h2 {
       margin: 0 auto 80px; }
   .program-box {
-    margin: 0 0 100px; }
+    margin: 0 0 106px; }
   .case {
-    padding: 150px 0 165px; }
+    padding: 153px 0 170px; }
     .case .btn {
       margin: 100px auto 0;
       padding: 25px 80px; }
@@ -1708,7 +1721,8 @@ footer {
     .stages-work .btn {
       margin: 57px auto 0; }
   .showcase-box {
-    margin: 0 0 105px; }
+    margin: 0 0 93px;
+    line-height: 1.4; }
   .showcase {
     padding: 153px 0 161px; }
     .showcase h3 {

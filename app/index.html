@@ -11,7 +11,7 @@
         content="программа лояльности, бонусная программа, система управления программой лояльности, запуск программы лояльности">
   <meta name="description" content="Удобный сервис для быстрого запуска программы лояльности с широкими возможностями!">
 
-<!--  <meta property="og:image" content="path/to/image.jpg">-->
+  <!--  <meta property="og:image" content="path/to/image.jpg">-->
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
   <!-- Chrome, Firefox OS and Opera -->
@@ -93,25 +93,25 @@
 
     <div class="wrapper w-100">
       <div class="program-box">
-        <div class="program-box__icon"><img src="img/check.png" alt=""></div>
+        <div class="program-box__icon"><img src="img/check.svg" alt=""></div>
         <div class="program-box__body">
           <h3>Быстрый старт</h3>
-          <p>Продуманное решение позволит <br>запустить программу за 1 день <br>без разработки собственной
-            <br>платформы.
+          <p>Продуманное решение <br>позволит запустить <br>программу за 1 день <br>без разработки <br>собственной
+            платформы.
           </p>
         </div>
       </div>
       <div class="program-box">
-        <div class="program-box__icon"><img src="img/check.png" alt=""></div>
+        <div class="program-box__icon"><img src="img/check.svg" alt=""></div>
         <div class="program-box__body">
           <h3>Удобная витрина</h3>
-          <p>Витрина с призами доступна <br>сразу после регистрации. У клиента <br>есть личный кабинет, куда ему
+          <p>Витрина с призами <br>доступна сразу после <br>регистрации. У клиента есть <br>личный кабинет, куда ему
             <br>начисляются баллы.
           </p>
         </div>
       </div>
       <div class="program-box">
-        <div class="program-box__icon"><img src="img/check.png" alt=""></div>
+        <div class="program-box__icon"><img src="img/check.svg" alt=""></div>
         <div class="program-box__body">
           <h3>Аналитика</h3>
           <p>Удобный личный кабинет <br>организатора с понятными <br>настройками и отчетами.
@@ -145,7 +145,8 @@
       <h4>Кейс 2</h4>
       <div class="case-box__content">
         <p><strong>Задача:</strong> увеличить продажи в определенный момент времени.</p>
-        <p><strong>Решение:</strong> вы размещаете на товаре активационные коды. <br>Мы начисляем баллы в момент регистрации
+        <p><strong>Решение:</strong> вы размещаете на товаре активационные коды. <br>Мы начисляем баллы в момент
+          регистрации
           кодов <br>участникам
           акции. Они обменивают их на призы.</p>
       </div>
@@ -223,14 +224,14 @@
 
     <div class="wrapper w-100">
       <div class="technical-support-box">
-        <div class="technical-support-box__icon"><img src="img/check.png" alt=""></div>
+        <div class="technical-support-box__icon"><img src="img/check.svg" alt=""></div>
         <h4>Круглосуточно решаем срочные вопросы.</h4>
         <p>Авиакомпания перенесла рейс?</p>
         <p>Клиент решил аннулировать бронирование?</p>
         <p>Мы оперативно подключимся и поможем!</p>
       </div>
       <div class="technical-support-box">
-        <div class="technical-support-box__icon"><img src="img/check.png" alt=""></div>
+        <div class="technical-support-box__icon"><img src="img/check.svg" alt=""></div>
         <h4>Отвечаем на любые вопросы клиентов.</h4>
         <p>Где скачать сертификат?</p>
         <p>Как завершить регистрацию?</p>
@@ -330,7 +331,7 @@
       <input type="hidden" value="Обратный звонок mybill.ru" name="theme">
       <input type="hidden" value="Здравствуйте!" name="text">
       <label><input type="text" name="phone" placeholder="Ваш телефон" required></label>
-      <label><input type="text" name="mail" placeholder="Ваш e-mail" required/>
+      <label><input type="email" name="mail" placeholder="Ваш e-mail" pattern=".+@beststartupever\.com" required/>
       </label>
 
       <button type="submit" class="btn btn-border">Отправить</button>
@@ -348,11 +349,19 @@
       <input type="hidden" value="Вопрос mybill.ru" name="theme">
       <input type="hidden" value="Здравствуйте!" name="text">
       <label><input type="text" name="phone" placeholder="Ваш телефон" required></label>
-      <label><input type="text" name="mail" placeholder="Ваш e-mail" required/>
+      <label><input type="email" name="mail" placeholder="Ваш e-mail" pattern=".+@beststartupever\.com" required/>
       </label>
 
       <button type="submit" class="btn btn-border">Отправить</button>
     </form>
+  </div>
+</div>
+
+<div class="modal__div" id="thanks__modal">
+  <div class="modal__wrapper">
+    <div class="modal__close"></div>
+    <h2>Спасибо за заявку!</h2>
+    <div class="box-text text-center"><p>Скоро мы с вами свяжемся.</p></div>
   </div>
 </div>
 
