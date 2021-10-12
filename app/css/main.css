@@ -900,7 +900,9 @@ footer {
   .program-box {
     padding: 40px 23px 50px 45px; }
   .tariffs-box {
-    margin: 0 150px 84px; } }
+    margin: 0 150px 84px; }
+  .technical-support-box {
+    margin: 0 25px 109px; } }
 
 @media only screen and (max-width: 1200px) {
   .container {

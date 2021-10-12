@@ -91,13 +91,13 @@ $(document).ready(function () {
                     top: '50%'
                 }, 200);
 
-            setTimeout(function () {
-                $("#thanks__modal").css('display', 'none').animate({
-                    opacity: 0,
-                    top: '45%'
-                });
-                $('.overlay').fadeOut(400);
-            }, 1000);
+            // setTimeout(function () {
+            //     $("#thanks__modal").css('display', 'none').animate({
+            //         opacity: 0,
+            //         top: '45%'
+            //     });
+            //     $('.overlay').fadeOut(400);
+            // }, 1000);
             // если после отправки нужно показать окно "спасибо" и скрыть его через секунду
             $(".form").trigger("reset");
         });
