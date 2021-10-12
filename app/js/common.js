@@ -152,4 +152,3 @@ $(window).scroll(function() {
 $('.my-paroller').paroller();
 
 $('[name="phone"]').inputmask("+7(999) 999-99-99");
-// $('[name="mail"]').inputmask();

@@ -778,7 +778,7 @@ footer {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 6;
+  z-index: 10;
   overflow: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -828,6 +828,17 @@ footer {
   .modal__wrapper h2 {
     margin: 0 auto 30px;
     font-size: 36px; }
+  .modal__wrapper .box-text {
+    text-align: center;
+    font-size: 18px;
+    line-height: normal;
+    margin: 0 auto 20px; }
+
+.consent {
+  text-align: center;
+  font-size: 14px;
+  margin: 20px auto 0;
+  color: grey; }
 
 .form button {
   margin: 30px auto 0;
@@ -875,13 +886,21 @@ footer {
       color: black; }
 
 /*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1700px) {
+  .home {
+    padding: 170px 0 102px; }
+  .btn-scroll-bottom {
+    margin: 100px auto 0; } }
+
 @media only screen and (max-width: 1450px) {
   .clouds_back {
     bottom: -100px; }
   .start-box {
     padding: 40px; }
   .program-box {
-    padding: 40px 23px 50px 45px; } }
+    padding: 40px 23px 50px 45px; }
+  .tariffs-box {
+    margin: 0 150px 84px; } }
 
 @media only screen and (max-width: 1200px) {
   .container {
