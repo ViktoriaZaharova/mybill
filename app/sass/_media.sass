@@ -599,6 +599,16 @@
 
 
 @media only screen and (max-width: 1030px)
+  .program-box
+    max-width: 32%
+    padding: 30px 20px
+    &__icon
+      width: 40px
+      height: 40px
+    &__body
+      width: calc(100% - 40px)
+      padding: 0 0 0 20px
+
   .logo
     font-size: 40px
 
@@ -653,23 +663,30 @@
       margin: 0 auto 30px
     h3
       margin: 0 auto 30px
+    .btn
+      margin: 0 auto
 
   h2
-    font-size: 50px
+    font-size: 40px
     line-height: normal
 
   h3
-    font-size: 26px
+    font-size: 22px
+    //font-size: 26px
 
   .program-box
-    font-size: 22px
+    font-size: 18px
+    //font-size: 22px
     min-height: auto
     br
       display: none
     h3
+      font-size: 24px
       margin: 0 0 10px
 
   .case
+    h2
+      margin: 0 auto 30px
     h3
       line-height: normal
     .btn
@@ -677,7 +694,8 @@
       margin: 20px auto 0
 
   .case-box__content
-    font-size: 22px
+    font-size: 18px
+    //font-size: 22px
 
   .case-box
     margin: 0 auto 40px
@@ -685,7 +703,8 @@
     br
       display: none
     h4
-      font-size: 34px
+      //font-size: 34px
+      font-size: 28px
       margin: 0 auto 20px
 
   .p-120
@@ -713,9 +732,13 @@
       line-height: normal
     .btn
       margin: 0 auto
+    .wrapper
+      flex-direction: row
+      align-items: flex-start
 
   .showcase-box
-    font-size: 24px
+    //font-size: 24px
+    font-size: 20px
 
     h4
       font-size: 26px
@@ -727,9 +750,14 @@
       margin: 0 auto 60px
     .btn
       margin: 0 auto
+    .wrapper
+      flex-direction: row
+      align-items: flex-start
 
   .technical-support-box
-    font-size: 24px
+    //font-size: 24px
+    max-width: 49%
+    font-size: 18px
     margin: 0 auto 60px
     &__icon
       margin: 0 auto 20px
@@ -741,10 +769,14 @@
     h3
       margin: 0 auto 60px
       line-height: normal
+    .wrapper
+      flex-direction: row
+      align-items: flex-start
 
   .tariffs-box
     font-size: 24px
     margin: 0 auto 60px
+    max-width: 49%
     &__icon
       height: 100px
     h4
@@ -761,10 +793,14 @@
       margin: 30px auto 0
 
   .start-box
-    font-size: 24px
+    font-size: 18px
+    //font-size: 24px
     min-height: auto
+    max-width: 32%
+    padding: 30px
     h3
-      font-size: 28px
+      font-size: 20px
+      //font-size: 28px
       margin: 0 0 20px
 
   footer
@@ -835,9 +871,9 @@
     line-height: normal
 
   .program-box
-    font-size: 20px
+    font-size: 16px
     min-height: auto
-    padding: 30px
+    padding: 30px 20px
     br
       display: none
     h3
@@ -908,10 +944,10 @@
     margin: 10px auto
 
   .start-box
-    padding: 30px
+    padding: 30px 20px
     margin: 0 auto 30px
     border-radius: 5px
-    font-size: 20px
+    font-size: 18px
     min-height: auto
     line-height: normal
     br
@@ -919,7 +955,7 @@
     h3
       line-height: normal
       margin: 0 0 10px
-      font-size: 26px
+      font-size: 20px
     &:nth-child(2), &:last-child
       br
         display: none
@@ -939,6 +975,16 @@
   .links-black
     font-size: 24px
 
+@media only screen and (max-width: 750px)
+  .showcase .wrapper
+    flex-direction: column
+    align-items: center
+
+  .showcase-box
+    margin: 0 auto 30px
+
+  .technical-support-box, .tariffs-box, .start-box, .program-box
+    max-width: 100%
 
 
 /* Extra Small Devices, Phones */
